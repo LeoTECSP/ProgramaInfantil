@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{404CC82B-062E-41E9-8650-0DA57EA04C3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoISW</RootNamespace>
+    <AssemblyName>ProyectoISW</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActividadesES\AcertijoPalabraTEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesES\AcertijoPalabraTEMP.designer.cs">
+      <DependentUpon>AcertijoPalabraTEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesES\EligeObjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesES\EligeObjeto.designer.cs">
+      <DependentUpon>EligeObjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesES\AcertijoPalabra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesES\AcertijoPalabra.designer.cs">
+      <DependentUpon>AcertijoPalabra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesES\RCTemporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesES\RCTemporal.designer.cs">
+      <DependentUpon>RCTemporal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesES\ReconoceInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesES\ReconoceInicial.designer.cs">
+      <DependentUpon>ReconoceInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesES\SopaDeLetras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesES\SopaDeLetras.designer.cs">
+      <DependentUpon>SopaDeLetras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesMA\EligeNumeroTEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesMA\EligeNumeroTEMP.designer.cs">
+      <DependentUpon>EligeNumeroTEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesMA\EligeNumero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesMA\EligeNumero.designer.cs">
+      <DependentUpon>EligeNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesMA\GolpeaTopo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesMA\GolpeaTopo.designer.cs">
+      <DependentUpon>GolpeaTopo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesMA\Memorama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesMA\Memorama.Designer.cs">
+      <DependentUpon>Memorama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesMA\Suma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesMA\Suma.designer.cs">
+      <DependentUpon>Suma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadesMA\SumaTEMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActividadesMA\SumaTEMP.designer.cs">
+      <DependentUpon>SumaTEMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Acceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Acceso.Designer.cs">
+      <DependentUpon>Acceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccesoPrograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccesoPrograma.Designer.cs">
+      <DependentUpon>AccesoPrograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ActividadEjemplo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActividadEjemplo.Designer.cs">
+      <DependentUpon>ActividadEjemplo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarProfesor.designer.cs">
+      <DependentUpon>AgregarProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarNiño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarNiño.designer.cs">
+      <DependentUpon>AgregarNiño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Historial.Designer.cs">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HistorialActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistorialActividades.designer.cs">
+      <DependentUpon>HistorialActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogeoNiño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LogeoNiño.designer.cs">
+      <DependentUpon>LogeoNiño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\menuAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menuAdministrador.Designer.cs">
+      <DependentUpon>menuAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\menuProfe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menuProfe.Designer.cs">
+      <DependentUpon>menuProfe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\menuProsefor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menuProsefor.designer.cs">
+      <DependentUpon>menuProsefor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuEspanol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuEspanol.Designer.cs">
+      <DependentUpon>MenuEspanol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuMatematicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuMatematicas.Designer.cs">
+      <DependentUpon>MenuMatematicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Variables.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActividadesES\AcertijoPalabraTEMP.resx">
+      <DependentUpon>AcertijoPalabraTEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesES\EligeObjeto.resx">
+      <DependentUpon>EligeObjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesES\AcertijoPalabra.resx">
+      <DependentUpon>AcertijoPalabra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesES\RCTemporal.resx">
+      <DependentUpon>RCTemporal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesES\ReconoceInicial.resx">
+      <DependentUpon>ReconoceInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesES\SopaDeLetras.resx">
+      <DependentUpon>SopaDeLetras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesMA\EligeNumeroTEMP.resx">
+      <DependentUpon>EligeNumeroTEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesMA\EligeNumero.resx">
+      <DependentUpon>EligeNumero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesMA\GolpeaTopo.resx">
+      <DependentUpon>GolpeaTopo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesMA\Memorama.resx">
+      <DependentUpon>Memorama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesMA\Suma.resx">
+      <DependentUpon>Suma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActividadesMA\SumaTEMP.resx">
+      <DependentUpon>SumaTEMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Acceso.resx">
+      <DependentUpon>Acceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccesoPrograma.resx">
+      <DependentUpon>AccesoPrograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActividadEjemplo.resx">
+      <DependentUpon>ActividadEjemplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarProfesor.resx">
+      <DependentUpon>AgregarProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarNiño.resx">
+      <DependentUpon>AgregarNiño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Historial.resx">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HistorialActividades.resx">
+      <DependentUpon>HistorialActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogeoNiño.resx">
+      <DependentUpon>LogeoNiño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\menuAdministrador.resx">
+      <DependentUpon>menuAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\menuProfe.resx">
+      <DependentUpon>menuProfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\menuProsefor.resx">
+      <DependentUpon>menuProsefor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuEspanol.resx">
+      <DependentUpon>MenuEspanol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuMatematicas.resx">
+      <DependentUpon>MenuMatematicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pera_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PantallaFelicidades.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog-g7ed52b0c8_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaca_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conejoayuda_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda_img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3ice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conejo_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perro_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correcto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incorrecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tijera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correcto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incorrecto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manzana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hormiga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caballo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escorpion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hipopotamo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nutria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iguana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elefante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sumas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agujero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgujeroVacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\martillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Golpeo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actividad-fisica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicicleta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ciclismo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ejercicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escuchando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\futbol-americano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maquina-de-entrenamiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trotar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pelota.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galleta.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tortuga.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vaca.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sol.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avion.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patinandoNina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saltandoCuerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leyendomenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menutres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menudos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuuno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menumatuno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninosmenuprincipal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

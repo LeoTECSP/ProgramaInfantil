@@ -1,0 +1,13 @@
+C:\Users\Dell\source\repos\ProyectoISW\bin\Debug\ProyectoISW.exe.config
+C:\Users\Dell\source\repos\ProyectoISW\bin\Debug\ProyectoISW.exe
+C:\Users\Dell\source\repos\ProyectoISW\bin\Debug\ProyectoISW.pdb
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.Form1.resources
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.Forms.MenuLectura.resources
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.Properties.Resources.resources
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.exe
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.pdb
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.Forms.MenuEscritura.resources
+C:\Users\Dell\source\repos\ProyectoISW\obj\Debug\ProyectoISW.Forms.MenuMatematicas.resources
